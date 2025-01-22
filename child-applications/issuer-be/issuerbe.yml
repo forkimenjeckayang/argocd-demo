@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/adorsys/be-kc-client-oid4vc.git'
+    repoURL: 'git@github.com:adorsys/be-kc-client-oid4vc.git'
     targetRevision: improved-helm-chart-deployment
     path: issuer-be-helm-chart
     helm:
