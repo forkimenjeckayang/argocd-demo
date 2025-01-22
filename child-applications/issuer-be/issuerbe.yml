@@ -9,6 +9,7 @@ spec:
     repoURL: 'https://github.com/adorsys/be-kc-client-oid4vc.git'
     targetRevision: improved-helm-chart-deployment
     path: issuer-be-helm-chart
+    helm:
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: datev-wallet

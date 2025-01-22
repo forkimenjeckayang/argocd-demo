@@ -9,6 +9,7 @@ spec:
     repoURL: 'https://github.com/adorsys/keycloak-ssi-deployment.git'
     targetRevision: improved-helm-chart-deployment
     path: keycloak-chart
+    helm:
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: datev-wallet

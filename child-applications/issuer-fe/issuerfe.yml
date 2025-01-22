@@ -9,6 +9,7 @@ spec:
     repoURL: 'https://github.com/adorsys/fe-kc-client-oid4vc.git'
     targetRevision: improved-helm-chart-deployment
     path: fe-kc-client-oid4vc-chart
+    helm:
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: datev-wallet
