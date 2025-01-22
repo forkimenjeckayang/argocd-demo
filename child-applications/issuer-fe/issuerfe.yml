@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: issuer_fe
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/adorsys/fe-kc-client-oid4vc.git'
+    targetRevision: improved-helm-chart-deployment
+    path: fe-kc-client-oid4vc-chart
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: datev-wallet
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  syncWave: 2

@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: keycloak
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/adorsys/keycloak-ssi-deployment.git'
+    targetRevision: improved-helm-chart-deployment
+    path: keycloak-chart
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: datev-wallet
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  syncWave: 0
