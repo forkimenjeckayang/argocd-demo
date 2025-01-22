@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: issuer_fe
+  name: issuer-fe
   namespace: argocd
 spec:
   project: default
