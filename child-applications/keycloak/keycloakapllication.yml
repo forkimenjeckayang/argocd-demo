@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/adorsys/keycloak-ssi-deployment.git'
     targetRevision: improved-helm-chart-deployment
-    path: keycloak-char
+    path: keycloak-chart
     helm:
   destination:
     server: 'https://kubernetes.default.svc'
