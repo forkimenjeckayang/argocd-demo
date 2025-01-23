@@ -17,4 +17,4 @@ spec:
     automated:
       prune: true
       selfHeal: true
-  syncWave: 2
+  syncWave: 1
